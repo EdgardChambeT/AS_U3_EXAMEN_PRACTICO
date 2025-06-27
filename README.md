@@ -2,7 +2,7 @@
 
 **FACULTAD DE INGENIERÍA** 
 
-![logo](Evidencias/logo.jpeg)  
+![logo](Evidencias/logo.png)  
 
 **Examen de U3** 
 
