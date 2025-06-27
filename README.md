@@ -2,7 +2,7 @@
 
 **FACULTAD DE INGENIERÍA** 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.001.png)
+![logo](Evidencias/logo.jpeg)  
 
 **Examen de U3** 
 
