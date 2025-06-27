@@ -412,45 +412,52 @@ Cuadro 3: Plan de acción para la mitigación de los hallazgos
 
 EXAMEN DE UNIDAD – PRACTICO CHAMBE TORRES   Imagen 1: Clonamos y abrimos el proyecto 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.011.jpeg)
+![evidencia1](Evidencias/1.png)  
 
 Imagen 2: Establecemos nuestro rango de IP 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.012.jpeg)
+![evidencia2](Evidencias/2.png)  
 
 Imagen 3: INSTALAMOS VAGRANT 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.013.jpeg)
+![evidencia3](Evidencias/3.png)  
 
 Imagen 3: Instalamos RUBY  para Windows 
 
-` `![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.014.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.015.png)
+![evidencia4](Evidencias/4.png)  
 
 Culminamos la instalación:  
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.016.jpeg)
+![evidencia5](Evidencias/5.png)  
 
-Seleccionamos la instalación base de Ruby para Windows:  ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.017.png)
+Seleccionamos la instalación base de Ruby para Windows:  
+
+![evidencia6](Evidencias/6.png)  
 
 Instalamos el plugin vagrant-env para poder cargar variables ed ambiente desde el archivo .env  
 
 ` `vagrant plugin install vagrant-env  
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.018.png)
+![evidencia7](Evidencias/7.png) 
 
 - También debes instalar la gema serverspec para poder ejecutar las pruebas de 
 
 integración e infraestructura:  gem install serverspec  
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.019.png)
+![evidencia8](Evidencias/8.png) 
 
 Procedemos a levantar nuestro Proyecto:   
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.020.jpeg)
+![evidencia9](Evidencias/9.png) 
 
-Procso  de  Levantamiens to  de  ![ref1]  3 ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.022.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.023.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.024.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.025.png)![ref1]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.026.png)
+Proceso  de  Levantamiento  de:  
 
-APRECIAMOS NUESTRO SERVIDOR LEVANTADO:  ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.027.png)http://192.168.56.2 / ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.028.png)![ref2]![ref2]
+![evidenci10](Evidencias/10.png) 
+
+APRECIAMOS NUESTRO SERVIDOR LEVANTADO:  
+
+![evidenci10](Evidencias/11.png) 
+
 
 Paso a Paso para Identificar y Documentar Riesgos en el Despliegue de WordPress     Paso 1: Acceso al Entorno Desplegado  
 
@@ -458,23 +465,25 @@ Paso a Paso para Identificar y Documentar Riesgos en el Despliegue de WordPress 
 
 - Abre tu navegador en:  
 
-  ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.030.png)  [ http://192.168.560(W.1or](http://192.168.56.10/)dPress) ![ref3]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.032.png)![ref3]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.033.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.034.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.035.png)![ref4]![ref4]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.036.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.037.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.038.png)
+![evidenci10](Evidencias/12.png) 
 
 ` `[  http://192.168.56.2 (Pr](http://192.168.56.2/)oxy Nginx)  
 
-- Confirmmos  que  la  pagina  princ ipal  esta ![ref4]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.039.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.040.png)![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.041.png)![ref4]![ref4]![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.042.png)
+- Confirmmos  que  la  pagina  princ ipal  esta
+
+![evidenci10](Evidencias/13.png) 
 
 **Hallazgos Encontrados:** 
 
 1. Exposición de credenciales sensibles
 
-   ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.043.png)
+![evidenci14](Evidencias/14.png) 
 
 2. Puertos abiertos sin restricciones y falta de firewall 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.044.png)
+![evidenci15](Evidencias/15.png) 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.045.png)
+![evidenci15](Evidencias/16.png) 
 
 - Se puede apreciar que el puerto:80 está abierto a todas las IPs (0.0.0.0) 
 - Y el ufw se encuentra inactivo (Status: inactive) 
@@ -482,7 +491,7 @@ Paso a Paso para Identificar y Documentar Riesgos en el Despliegue de WordPress 
 
 Se aprecia que No hay logs 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.046.png)
+![evidenci15](Evidencias/17.png) 
 
 4. Uso de versiones de software obsoletas 
 
@@ -493,13 +502,13 @@ En este caso aplicamos los siguientes comandos para ver las versiones:
 - php -v 
 - mysql –version 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.047.png)
+![evidenci15](Evidencias/18.png) 
 
 Verás versiones antiguas como Ubuntu 20.04, PHP 7.x, MySQL 5.x, etc. 
 
 5. Ambiente único sin segmentación (dev/test/prod) 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.048.jpeg)
+![evidenci15](Evidencias/19.png) 
 
 Resultados: 
 
@@ -519,11 +528,11 @@ Ausencia de pruebas automatizadas o validaciones
 
 No se incluye verificación posterior al aprovisionamiento 
 
-![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.049.png)
+![evidenci15](Evidencias/20.png) 
 
 7. Respaldo manuales y no verificados grep -i backup /vagrant/cookbooks/ -r 
 
-   ![](Aspose.Words.51fc94ba-38fb-4c35-8f5f-207a879ae47d.050.png)
+![evidenci15](Evidencias/21.png) 
 
    Se puede apreciar que : 
 
